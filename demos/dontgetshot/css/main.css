@@ -1,0 +1,16 @@
+@font-face { 
+    font-family: PressStart2P;
+    src: url('../fonts/PressStart2P.ttf');
+}
+
+body {
+    margin: 0;
+}
+
+canvas {
+    background: black;
+    cursor: crosshair;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

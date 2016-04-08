@@ -1,53 +1,208 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Projects by Nick Conlon : ">
+<head>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Nick Conlon's portfolio website">
+    <meta name="author" content="Nick Conlon">
 
-    <title>Projects by Nick Conlon</title>
-  </head>
+    <title>Nicholas Conlon</title>
 
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/Nolnocn">View on GitHub</a>
-
-          <h1 id="project_title">Projects by Nick Conlon</h1>
-          <h2 id="project_tagline"></h2>
-
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a id="trying-out-github-pages" class="anchor" href="#trying-out-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Trying out GitHub Pages.</h3>
-
-<p>This doesn't look terrible. Could be a little more unique, but I'm not really a web designer. More of a codey-code guy myself. I'd rather just have a site to put my stuff up on and call it a day. It's not like someone will look at some fancy-smancy site I built and think "gee, this guy made a nice site, I better hire him as a gameplay programmer."</p>
-
-<p>It would be pretty cool, though I'd prefer to direct more attention to my projects. I guess making a site would be a project on its own, but it'd be more design-y. I don't think I'd be wowing anyone with my website's functionality. But I digress. I just wanted to see how a paragraph or two would look when published.</p>
-
-<p>Note to self, change this before people start looking at it.</p>
-
-<p>P.S. If you read this, you just wasted your time.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-  </body>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-terminal"></i> Nicholas Conlon
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Blah</h1>
+                        <p class="intro-text">Blah blah blah blah blah.</p>
+                        <!--<a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="projects" class="content-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Projects</h2>
+                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal" class="portfolio-link" data-toggle="modal">
+                        <img src="img/projects/tat.png" class="img-responsive" alt="Trick and Treat">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal" class="portfolio-link" data-toggle="modal">
+                        <img src="img/projects/sbl.png" class="img-responsive" alt="Southern, But Love">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal" class="portfolio-link" data-toggle="modal">
+                        <img src="img/projects/thepatrol.png" class="img-responsive" alt="The Patrol">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal" class="portfolio-link" data-toggle="modal">
+                        <img src="img/projects/dgs.png" class="img-responsive" alt="Don't Get Shot">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal" class="portfolio-link" data-toggle="modal">
+                        <img src="img/projects/eden.png" class="img-responsive" alt="Eden">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal" class="portfolio-link" data-toggle="modal">
+                        <img src="img/projects/animaker.png" class="img-responsive" alt="The Animaker">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Nick MF Conlon</h2>
+                <p>Blah.</p>
+                <p>Blah.</p>
+                <p>Blah!</p>
+                <p>
+                    <a href="https://github.com/Nolnocn" target="_blank">
+                        <i class="button fa fa-2x fa-stack">
+                            <i class="fa fa-github-square fa-stack-2x"></i>
+                        </i>
+                    </a>
+                    <a href="https://www.linkedin.com/pub/nicholas-conlon/97/45b/a2a" target="_blank">
+                        <i class="button fa fa-2x fa-stack">
+                            <i class="fa fa-linkedin-square fa-stack-2x"></i>
+                        </i>
+                    </a>
+                    <a href="about/nicholasconlonresume.pdf" target="_blank">
+                        <i class="button fa fa-2x fa-stack">
+                            <i class="fa fa-square fa-stack-2x"></i>
+                            <i class="fa fa-file-text fa-stack-1x" id="resume"></i>
+                        </i>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <!--<p>Copyright &copy; Nicholas Conlon 2016</p>-->
+        </div>
+    </footer>
+    
+    <!-- Portfolio Modal -->
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <!--<div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>-->
+                <i class="button fa fa-4x fa-times"></i>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Meep</p>
+                            <!--<img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">-->
+                            <p>Bawls</p>
+                            <ul class="list-inline">
+                                <li>Date: July 2014</li>
+                                <li>Client: Round Icons</li>
+                                <li>Category: Graphic Design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+</body>
+
 </html>
