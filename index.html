@@ -68,11 +68,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Blah</h1>
-                        <p class="intro-text">Blah blah blah blah blah.</p>
-                        <!--<a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>-->
+                        <h1 class="brand-heading">Hi, I'm Nick</h1>
+                        <p class="intro-text">I make games and other interactive media. Feel free to play around with some demos <a class="page-scroll" href="#projects">here</a> or browse my projects on <a href="https://github.com/Nolnocn" target="_blank">Github</a>. You can also find out a bit more about me in the <a class="page-scroll" href="#about">About</a> section.</p>
                     </div>
                 </div>
             </div>
@@ -85,36 +82,36 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Projects</h2>
-                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                    <!--<h3>Lorem ipsum dolor sit amet consectetur.</h3>-->
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div id="tat" class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal" class="portfolio-link" data-toggle="modal">
                         <img src="img/projects/tat.png" class="img-responsive" alt="Trick and Treat">
                     </a>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div id="sbl" class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal" class="portfolio-link" data-toggle="modal">
                         <img src="img/projects/sbl.png" class="img-responsive" alt="Southern, But Love">
                     </a>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div id="thepatrol" class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal" class="portfolio-link" data-toggle="modal">
                         <img src="img/projects/thepatrol.png" class="img-responsive" alt="The Patrol">
                     </a>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div id="dgs" class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal" class="portfolio-link" data-toggle="modal">
                         <img src="img/projects/dgs.png" class="img-responsive" alt="Don't Get Shot">
                     </a>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div id="eden" class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal" class="portfolio-link" data-toggle="modal">
                         <img src="img/projects/eden.png" class="img-responsive" alt="Eden">
                     </a>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div id="animaker" class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal" class="portfolio-link" data-toggle="modal">
                         <img src="img/projects/animaker.png" class="img-responsive" alt="The Animaker">
                     </a>
@@ -127,7 +124,7 @@
     <section id="about" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Nick MF Conlon</h2>
+                <h2>About</h2>
                 <p>Blah.</p>
                 <p>Blah.</p>
                 <p>Blah!</p>
@@ -164,10 +161,6 @@
     <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
-                <!--<div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>-->
                 <i class="button fa fa-4x fa-times"></i>
             </div>
             <div class="container">
@@ -175,15 +168,16 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Meep</p>
-                            <!--<img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">-->
-                            <p>Bawls</p>
-                            <ul class="list-inline">
-                                <li>Date: July 2014</li>
-                                <li>Client: Round Icons</li>
-                                <li>Category: Graphic Design</li>
-                            </ul>
+                            <h2 id="modalTitle" hidden>Trick and Treat</h2>
+                            <img id="modalImg" class="img-responsive img-centered" src="img/projects/tat.png" alt="Trick and Treat">
+                            <h3>
+                                <ul class="list-inline">
+                                    <li><a id="modalGithub" href="https://github.com/Nolnocn/Trick-and-Treat" target="_blank">Github</a></li>
+                                    <li><i class="fa fa-circle-o"></i></li>
+                                    <li><a id="modalDemo" href="demos/trickandtreat/" target="_blank">Demo</a></li>
+                                </ul>
+                            </h3>
+                            <p id="modalDesc">Bawls</p>
                         </div>
                     </div>
                 </div>
@@ -191,17 +185,17 @@
         </div>
     </div>
 
+    <!-- Scripts -->
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
-
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
+    <script src="js/portfolioContent.js"></script>
+    <script src="js/portfolioModal.js"></script>
 
 </body>
 
