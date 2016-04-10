@@ -284,6 +284,10 @@ a:focus {
     font-size: 3em;
 }
 
+.portfolio-modal .modal-content p {
+    text-align: left;
+}
+
 .portfolio-modal .modal-content img {
     margin-bottom: 30px;
 }
