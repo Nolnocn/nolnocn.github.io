@@ -46,6 +46,6 @@ site.portfolioContent = {
         img: "img/projects/animaker.png",
         git: "https://github.com/Nolnocn/Animaker",
         demo: "demos/animaker",
-        desc: "<p>The Animaker is...</p>"
+        desc: "<p>The Animaker is a web application I created with one other person as a project for my Rich Media Web App Development course I took during my third year at RIT. It is a tool that allows users to add images to a canvas and then position them across several frames to make simple animations. While it was a relatively small scope project, I really enjoyed working on it.</p><p>For this project, my primary focus was working on the playback of the frames to create an actual animation. It certainly wasn’t ground breaking to change an image after a delay, but there were a lot of interesting problems to solve. One such problem was creating a single image for the frame from all the images on the canvas, while also keeping track of those individual images so the frame could be edited. I also got to try my hand at constraining the movement of an image being dragged to either the x or y axis. I even programmed a pretty neat scrollbar for the timeline.</p><p>Of course, The Animaker is not a fully featured animation tool. There is a lot that we could have and wanted to add in to make it more usable and useful. Being able to save the animations, for instance, would have been a nice touch. However, despite its shortcomings, The Animaker was a project I enjoyed working on and I’m satisfied with what we accomplished.</p>"
     }
 };
