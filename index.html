@@ -9,19 +9,36 @@
     <meta name="description" content="Nick Conlon's portfolio website">
     <meta name="author" content="Nick Conlon">
 
-    <title>Nicholas Conlon</title>
-
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Nick Conlon</title>
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     
     <!-- CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <noscript>
         <style> 
             .jsonly { 
-                display: none
+                display: none!important;
             }
             
             .navbar-custom {
@@ -51,7 +68,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-terminal"></i> Nicholas Conlon
+                    <i class="fa fa-terminal"></i> Nick Conlon
                 </a>
             </div>
 
@@ -62,8 +79,11 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#projects">Projects</a>
+                    <li class="jsonly">
+                        <a href="http://blargh.nconlon.com">Blog</a>
+                    </li>
+                    <li class="jsonly">
+                        <a class="page-scroll" href="#portfolio">Projects</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about">About</a>
@@ -76,27 +96,25 @@
     </nav>
 
     <!-- Intro Header -->
-    <header class="intro">
+    <section id="intro">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Welcome</h1>
-                        <p class="intro-text">My name is Nick. I make games and other interactive media.</p>
-                        <p class="intro-text">Feel free to play around with some of the demos <a class="page-scroll" href="#projects">here</a> or browse my projects on <a href="https://github.com/Nolnocn" target="_blank">Github</a>. You can also find out a bit more about me in the <a class="page-scroll" href="#about">About</a> section.</p>
+                        <h1 class="brand-heading">Hi, I'm Nick</h1>
+                        <p class="intro-text">I enjoy programming, games, and programming games.</p> 
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-
+    </section>
+    
     <!-- Projects Section -->
-    <section id="projects" class="content-section text-center">
+    <section id="portfolio" class="content-section text-center">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Projects</h2>
-                    <!--<h3>Lorem ipsum dolor sit amet consectetur.</h3>-->
                 </div>
             </div>
             <div class="row jsonly">
@@ -153,31 +171,40 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>About</h2>
                 <p class="left-align">
-                    Hello! I'm Nick Conlon. I am a recent graduate of the Rochester Institute of Technology with a degree in  Game Design and Development. Games have played a huge part in my life and I've always been captivated by every type of game. I pretty much grew up with a GameBoy in my hand, but I was never one to shy away from a race to the front seat of the car either, so to be able to take that passion and turn it into a career was a dream come true.
+                    <span class="bold">Nick Conlon</span> is a software developer focusing on games and interactive media.
                 </p>
                 <p class="left-align">
-                    Making games had always seemed like a pipe dream for me, and I never really thought it would be the thing for me. In my junior year of high school, however, I started to really excel in mathematics, particularly logic, so I decided to give programming a shot. I started off messing around with tools such as GameSalad, Stencyl, and GameMaker and I had a blast. I enjoyed it so much that I decided to dive straight into using Unity. By the end of my high school career I had even made a few small games and dozens of prototypes.
+                    I spent a hefty portion of my childhood with a controller in my hand.
+
+                    Admittedly, I was never particularly good at games, but that didn't stop me or diminish my enjoyment.
+                    
+                    I still remember my friend's older sister had to show me how to save my progress in Pokémon Red 
+                    on the school bus, so I could even venture beyond Pallet Town. 
+
+                    It was the challenges and figuring things out as I went along (even if I needed some help 
+                    every now and then) that I loved most about games.
                 </p>
                 <p class="left-align">
-                    For the past five years I have constantly challenged myself to go above and beyond my capabilities. To continue solving problems, learning new techniques, and to be better than I was yesterday. It is with the mentality that I approach all my work. Whether it's professional, a game jam, or just some little side project, I put everything I have into it. And with the right mix of blood, sweat, tears, and some code, I can face any problem set before me.
+                    Funnily enough, it wasn't actually playing games that drove me into game development, 
+                    it was a high school math course. 
+                    
+                    As much as I loved using geometry and trig to prove silly mathematical identities for tests, 
+                    the realization that I could apply these same principles to move a character 
+                    or fire a missile in some direction opened up a whole new world of possibilities.
+
+                    Just like that, the challenge wasn't figuring out how to save my own progress anymore, 
+                    it was about figuring out how I could save someone else's.
                 </p>
-                <p>
-                    <a href="https://github.com/Nolnocn" target="_blank">
-                        <i class="button fa fa-2x fa-stack">
-                            <i class="fa fa-github-square fa-stack-2x"></i>
-                        </i>
-                    </a>
-                    <a href="https://www.linkedin.com/pub/nicholas-conlon/97/45b/a2a" target="_blank">
-                        <i class="button fa fa-2x fa-stack">
-                            <i class="fa fa-linkedin-square fa-stack-2x"></i>
-                        </i>
-                    </a>
-                    <!--<a href="about/nicholasconlonresume.pdf" target="_blank">
-                        <i class="button fa fa-2x fa-stack">
-                            <i class="fa fa-square fa-stack-2x"></i>
-                            <i class="fa fa-file-text fa-stack-1x" id="resume"></i>
-                        </i>
-                    </a>-->
+                <p class="left-align">
+                    For me, game development isn't some lofty dream of taking wild ideas and making them reality. 
+                    
+                    It's an opportunity to tackle unique challenges with nothing but my wits, an evergrowing bag of 
+                    coding tricks, and a few Google searches. 
+                    
+                    Every system, feature, and bug I create is a learning experience, a chance to grow and prepare 
+                    for the next challenge. 
+                    
+                    Plus, I get to work on games, which is pretty awesome.
                 </p>
             </div>
         </div>
@@ -186,7 +213,22 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <!--<p>Copyright &copy; Nicholas Conlon 2016</p>-->
+            <a href="https://github.com/Nolnocn" target="_blank">
+                <i class="button fa fa-2x fa-stack">
+                    <i class="fa fa-github-square fa-stack-2x"></i>
+                </i>
+            </a>
+            <a href="https://www.linkedin.com/pub/nicholas-conlon/97/45b/a2a" target="_blank">
+                <i class="button fa fa-2x fa-stack">
+                    <i class="fa fa-linkedin-square fa-stack-2x"></i>
+                </i>
+            </a>
+            <!--<a href="blargh.nconlon.com" target="_blank">
+                <i class="button fa fa-2x fa-stack">
+                    <i class="fa fa-square fa-stack-2x"></i>
+                    <i id="footerWpIcon" class="fa fa-wordpress fa-stack-1x" id="resume"></i>
+                </i>
+            </a>-->
         </div>
     </footer>
     
@@ -202,14 +244,66 @@
                         <div class="modal-body">
                             <h2 id="modalTitle" hidden>Shucks</h2>
                             <img id="modalImg" class="img-responsive img-centered" src="" alt="Uh oh">
-                            <h3>
-                                <ul class="list-inline">
-                                    <li><a id="modalGithub" href="" target="_blank">Github</a></li>
-                                    <li><i class="fa fa-circle-o"></i></li>
-                                    <li><a id="modalDemo" href="" target="_blank">Demo</a></li>
+                            
+                            <span id="portfolioItemInfo">
+                                <div id="modalLinks">
+                                    <a id="modalGithub" href="https://github.com/Nolnocn" target="_blank">
+                                        <i class="button fa fa-2x fa-stack">
+                                            <i class="fa fa-github fa-stack-2x"></i>
+                                        </i>
+                                    </a>
+                                    <i class="fa fa-circle-o"></i>
+                                    <a id="modalDemo" href="" target="_blank">
+                                        <i class="button fa fa-2x fa-stack">
+                                            <i class="fa fa-play-circle fa-stack-2x"></i>
+                                        </i>
+                                    </a>
+                                </div>
+
+                                <table>
+                                    <tr>
+                                        <th>Project Title:</th>
+                                        <td id="modalProjTitle"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Project Type:</th>
+                                        <td id="modalProjType"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Technologies Used:</th>
+                                        <td id="modalProjTech"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Date:</th>
+                                        <td id="modalProjDate"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Project Length:</th>
+                                        <td id="modalProjDuration"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Team:</th>
+                                        <td id="modalProjTeam"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>My Role:</th>
+                                        <td id="modalProjRole"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Contributions:</th>
+                                        <td id="modalProjContrib"></td>
+                                    </tr>
+                                </table>
+                            </span>
+
+                            <p id="modalProjDesc">If you can see this, something went wrong. Sorry!</p>
+                            
+                            <!--<span id="funFacts">
+                                <p>Fun Facts:</p>
+                                <ul id="modalProjFunFacts">
                                 </ul>
-                            </h3>
-                            <div id="modalDesc">If you can see this, something went wrong. Sorry!</div>
+                            </span>-->
+                            
                             <h3><a id="#modalClose" data-dismiss="modal" href="">Close</a></h3>
                         </div>
                     </div>
@@ -226,7 +320,7 @@
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
+    <script src="js/util.js"></script>
     <script src="js/portfolioContent.js"></script>
     <script src="js/portfolioModal.js"></script>
 

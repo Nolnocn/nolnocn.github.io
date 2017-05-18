@@ -6,23 +6,44 @@ site.portfolioContent = {
         img: "img/projects/tat.png",
         git: "https://github.com/Nolnocn/Trick-and-Treat",
         demo: "demos/trickandtreat",
-        desc: "<p>Trick and Treat was the first of three games I worked on for my Game Design and Development II course that I took during my third year at RIT. The game was built in five weeks using Unity 4. It is a 2D beat 'em up style game about a delusional \"ghost buster\" who takes to the streets on Halloween to rid the world of ghosts. It is a very silly game that I had a lot of fun working on.</p><p>I was part of a team of eight people building the game, which was the largest team I had ever worked with up to that point. My role was primarily the gameplay programmer on the team. I worked on basically anything that wasn't AI or UI. I programmed features such as player movement and actions, as well as systems such as the infinitely scrolling level and parallaxed background.</p><p>Trick and Treat holds a special place in my heart as one of my favorite projects I've ever worked on. Firstly, because it was the first time I had worked with a team on a game in Unity, after about three years of messing around with the engine on my own. And things went great! The team worked very well together and we had so many people that each team member got to specialize in something that interested them. We had four programmers, three artists, and even a sound designer which was another first for a project I worked on.</p><p>Though, one of the things I am most proud of about Trick and Treat is that the game was my idea. As part of the course, each person in the class had to give a presentation and pitch a game idea. As an added design challenge, the game had to involve a vacuum cleaner somehow. I never really considered myself much of a design guy, but I thought of a funny idea and decided to roll with it. After the presentations, everyone voted on the games they wanted to work on and seven other people ended up working on this game with me.</p>"
+        type: "Desktop Game",
+        tech: "Unity 4, C#",
+        date: "September, 2014",
+        duration: "5 weeks",
+        team: "4 Programmers, 3 Artists, 1 Composer",
+        role: "Gameplay Programmer",
+        contrib: "Player Controls, Level Scrolling",
+        desc: "Trick and Treat is a 2D beat 'em up style game about Tom, a delusional \"ghostbuster\" who takes to the streets on the spookiest night of the year to combat the ghostly menace.",
+        funfacts: [
+            "Trick and Treat was a game idea I pitched in a game design course. The class voted on ideas and the highest voted were made.",
+            "The idea for Trick and Treat stemmed from the professor's restriction that all the games pitched must include a vaccuum."
+        ]
     },
     
-    sbl: {
+    /*sbl: {
         title: "Southern, But Love",
         img: "img/projects/sbl.png",
         git: "https://github.com/Nolnocn/Southern-But-Love",
         demo: "demos/southernbutlove",
         desc: "<p>Southern, But Love was the second of three games I worked on for my Game Design and Development II course that I took during my third year at RIT. The game was created after the completion of Trick and Treat with several of the same team members and, like Trick and Treat, was built in five weeks using Unity 4. Southern, But Love is a 2D infinite runner about a pair of lovers who must navigate their way through the treacherous bayous of the deep south. If it wasn’t obvious, we decided to step up the silliness for this project.</p><p>For this project, we had a team of five people working on the game. Four of which, myself included, had previously worked together on Trick and Treat. I reprised my role as gameplay programmer for this project as well, though I also helped with the UI and the system we set up for building levels procedurally. The way we constructed the level was actually one of the features I enjoyed building the most. Rather than scattering obstacles randomly and calling it a day, one of our team members designed several small obstacle courses in CSV format. The game then read in those CSV’s, built the level segments, and strung them together to build the level.</p><p>One of my favorite parts of working on Southern, But Love was continuing to work with the people I had met and worked so well with on Trick and Treat. We had the same artists, and borrowed heavily from Trick and Treat when building the gameplay, which gave our team and our work a recognizable identity. And we continued to work together. Though, we decided to change things up quite a bit for our third and final game, <a href=https://github.com/Nolnocn/Sunder-Scene target=\"_blank\">Sunder Scene</a>.</p>"
-    },
+    },*/
     
     thepatrol: {
         title: "The Patrol",
         img: "img/projects/thepatrol.png",
         git: "https://github.com/Nolnocn/The-Patrol",
         demo: "demos/thepatrol",
-        desc: "<p>The Patrol is an autonomous agent simulation that I created as my final project for my Interactive Media Development course during my second year at RIT. It was built in about a week using Unity 3. The simulation features a squad of knights who march from their village into the dark forest to combat an invasion of skeletons. It is not interactive, but the player is able to freely move the camera to observe. While this was a relatively short project that built upon previous assignments, I got an opportunity to really focus on aesthetics and make a decent looking simulation.</p><p>To create the simulation, I implemented and utilized several autonomous agent behaviors such as seeking, separation, obstacle avoidance, leader following, and flow. Initially, the knights follow their leader down a trail to the forest. After reaching the end of the trail, the knights fan out and patrol the forest. The spawning of the skeletons is delayed so that the first wave spawns in time to greet the knights at the end of the trail. The skeletons follow a flow field through the forest towards the trail, and target the knights when they come into range. When a skeleton or knight has a target, they move towards it and attack when in range. Only one combatant walks away.</p><p>One thing of note about this project was that it was the first time I relied heavily on the Unity Asset Store and other sources for game assets. With many of my solo projects in the past, I tended to be very stubborn about doing everything myself. My programmer art wouldn’t look particularly great, but I’d proudly call it my own. However, for this project I didn’t have the time or ability to create assets, so I looked around on the Unity Asset Store and various other sites for art that would fit. In the end, it looked a lot better than anything I would have been able to make. I still hogged all the programming for myself, but it was a step in the right direction and it helped me appreciate working with a team much more in the future.</p>"
+        type: "3D Autonomous Agent Simulation",
+        tech: "Unity 3, C#",
+        date: "December, 2013",
+        duration: "1 week",
+        team: "Just me! (+art from around the web)",
+        role: "Programmer",
+        contrib: "Programming, Level Design",
+        desc: "The Patrol is an autonomous agent simulation in which a squad of knights try to hold off a horde of invading skeletons.",
+        funfacts: [
+            "The skeletons start dancing once all the knights are defeated. This is arguably one of the most important features I've ever implemented into anything."
+        ]
     },
     
     dgs: {
@@ -30,7 +51,17 @@ site.portfolioContent = {
         img: "img/projects/dgs.png",
         git: "https://github.com/Nolnocn/Dont-Get-Shot",
         demo: "demos/dontgetshot",
-        desc: "<p>Don't Get Shot is a game I created as my final project for my Data Structures and Algorithms course that I took during my second year at RIT. The project requirement was simply to create an interactive scene using C++ and OpenGL, but I decided to take it a bit further and made a game. It was actually the first game I had ever created in C++ and was a great learning experience.</p><p>The game itself is pretty simple. The player controls a green triangle that rotates and moves towards the mouse. Enemies enter from off screen and start firing projectiles, which will destroy the player in one hit. However, the projectiles will also destroy other enemies. The player has to avoid getting hit while also trying to cause enemies to hit each other. The maximum number of enemies that can be on screen increased as more enemies died, making the game more hectic and difficult as time goes on. It was a pretty basic 'survive until you die' type game, but was proud of what I accomplished in such as short amount of time.</p><p>The fun didn’t stop there though. During the summer, I started looking into JavaScript and decided to rebuild Don’t Get Shot as a web game. The process was relatively painless, I simply took the functions from the C++ version of the game, placed them into the new web version, and modified the syntax as needed. Of course some things didn’t port over perfectly. For instance, I replaced the procedurally generated graphics and shaders in the C++ version with sprites. I also had to do some extra work to handle the shared functionality of each enemy type without inheritance.</p><p>However, despite requiring some extra steps to build the game in JavaScript, I really enjoyed working on it. In fact, I had so much fun that I continued working on the game. Besides general improvements, I added two additional enemy types to the game, one of which is a sort of boss. I also added scoring and UI elements in order to make it more of a “complete” game than the original version. With some extra elbow grease, I even got the game to work fairly well on mobile devices.</p><p>Don't Get Shot is one of the projects I am most proud of. It was essentially the project I used to test and hone my abilities in two different languages, and I worked on for no other reason than because I had a passion for it. There are definitely mistakes and room for improvement in both versions of the game, but they both turned out well for what they are. Not only that, but the game also ended up being pretty fun to play. There's something immensely satisfying about watching an enemy explode into little bits after putting it into the line of fire of its own ally.</p>"
+        type: "Desktop Game (C++) | Web Game (HTM5)",
+        tech: "OpenGL, C++ | HTML5, JavaScript",
+        date: "May, 2014 (C++)",
+        duration: "1 week (C++)",
+        team: "Just me!",
+        role: "Programmer",
+        contrib: "Gameplay, Enemy AI, Procedurally Generated Shapes",
+        desc: "Don't Get Shot is a simple 2D game in which the player attempts to survive an endless barrage of bullets from enemies, while also turning the enemies' fire against them. Originally created with OpenGL and C++ as a project for a course, later ported to JavaScript as a learning exercise.",
+        funfacts: [
+            "The assignment I made Don't Get Shot for was to simply to create an interactive scene with OpenGL."
+        ]
     },
     
     eden: {
@@ -38,7 +69,17 @@ site.portfolioContent = {
         img: "img/projects/eden.png",
         git: "https://github.com/Nolnocn/Eden",
         demo: "demos/eden",
-        desc: "<p>Eden is a game prototype that I created as my final project for my Rich Media Web App Development II course that I took during my fourth year at RIT. It is a web-based, multiplayer game programmed in JavaScript and built with Phaser and Node.js. I based Eden off of a game I worked on for Global Game Jam 2015, <a href=https://github.com/Nolnocn/Genesis target=\“_blank\”>Genesis</a>, but with a multiplayer twist. Eden was actually my first attempt at making a multiplayer game and it turned out surprisingly well.</p><p>The project really started with Genesis, which was created in 48 hours for Global Game Jam 2015. I was interning at 1st Playable Productions at the time and participated in the game jam with two of the other interns. The theme of the game jam was “What do we do now?” and the game we made was a sort of management game, where the player must constantly give characters tasks. The player can make characters collect food, collect firewood, eat, and generally move around. If a character does not have a task, they will standby idly waiting for the player to tell them what to do. Characters need to remain fed and warm to survive, but without the player’s intervention they will die.</p><p>However, the big twist with Genesis is that characters also grow old and will eventually die of old age. Each game starts with one male and one female character, and there is a special \"Love Tree\" that the player can send characters to. Turns out that tree is actually where babies come from. The player’s goal is the survival of the population, not the survival of any individual character. If all the characters die, it’s game over.</p><p>My following semester back at RIT, I needed an idea for a multi-user web application. I wanted to build a game, but didn’t really want to think up some multiplayer game just to meet the project requirements. After a few days of brainstorming with no results, I was showing a friend Genesis when I realized the gameplay would be interesting in a multiplayer setting. And thus Eden was born.</p><p>Rather than one player controlling all the characters, the idea behind Eden was that each player would control a single character. If there are more players than characters, the players are placed in a queue. When a new character is brought into existence, the next player from the queue takes control. It seemed like a pretty simple idea, but it was a wild ride.</p><p>I generally refer to Eden as a game prototype primarily because there isn’t much to play. Due to time constraints, I wasn’t able to get the core gameplay of Genesis implemented, such as collecting food and firewood. In Eden, players can control characters, move around, breed, and grow old, but that’s about it. Players take control of characters as they are brought into existence and any player not controlling a character can move around as a spectator. I wish I could have gotten more features into the game, but overall it was a great learning experience and I definitely learned not to underestimate the time and effort required to make even a simple multiplayer game. </p><p>Despite not being much of a game, I am proud of my work on Eden. It was nice to revisit Genesis and the idea of a multiplayer game that requires players to breed to allow more players into the game is relatively novel. Above all else, I got an opportunity to dabble in building a multiplayer game basically from scratch and am much more prepared for the next one.</p>"
+        type: "Multiplayer Web Game",
+        tech: "HTML5, JavaScript, Phaser, Node.js",
+        date: "October, 2015",
+        duration: "1 month",
+        team: "1 Programmer, 1 Artist",
+        role: "Programmer",
+        contrib: "Client & Server Programming",
+        desc: "Eden is a multiplayer game that starts off with two player controlled characters. One character is male and the other is female. One thing leads to another and before too long there are more characters for other players to control! In its current state, there's not much else to do besides run around and have babies. The plan was for Eden to be a cooperative survival game, but due to time restrictions it is more of a proof of concept.",
+        funfacts: [
+            "Eden is a multiplayer reimagining of <a href=\"https://github.com/Nolnocn/Genesis\" target=\"_blank\">Genesis</a>, a game I worked on for Global Game Jam 2015"
+        ]
     },
     
     animaker: {
@@ -46,7 +87,14 @@ site.portfolioContent = {
         img: "img/projects/animaker.png",
         git: "https://github.com/Nolnocn/Animaker",
         demo: "demos/animaker",
-        desc: "<p>The Animaker is a web application I created with one other person as a project for my Rich Media Web App Development course I took during my third year at RIT. It is a tool that allows users to add images to a canvas and then position them across several frames to make simple animations. While it was a relatively small scope project, I really enjoyed working on it.</p><p>For this project, my primary focus was working on the playback of the frames to create an actual animation. It certainly wasn’t ground breaking to change an image after a delay, but there were a lot of interesting problems to solve. One such problem was creating a single image for the frame from all the images on the canvas, while also keeping track of those individual images so the frame could be edited. I also got to try my hand at constraining the movement of an image being dragged to either the x or y axis. I even programmed a pretty neat scrollbar for the timeline.</p><p>Of course, The Animaker is not a fully featured animation tool. There is a lot that we could have and wanted to add in to make it more usable and useful. Being able to save the animations, for instance, would have been a nice touch. However, despite its shortcomings, The Animaker was a project I enjoyed working on and I’m satisfied with what we accomplished.</p>"
+        type: "Web-based Animation Tool",
+        tech: "HTML5, JavaScript",
+        date: "October, 2014",
+        duration: "1 week",
+        team: "2 Programmers",
+        role: "Programmer",
+        contrib: "Animation Playback, Frame Thumbnail System",
+        desc: "The Animaker is a basic animation tool that allows the user to create frame-based animations by adding, arranging, and moving images around in a canvas."
     },
     
     swatch: {
@@ -54,6 +102,22 @@ site.portfolioContent = {
         img: "img/projects/swatch.png",
         git: "https://github.com/JosephCoppola/IGM450-Project3",
         demo: "demos/swatch",
-        desc: "<p>Swatch was the third and final game I worked on as part of the Casual Game Development course I took during my senior year at RIT. The game is a match-3 mobile game based around color blending and was built in about five weeks using Unity 5. Gameplay is pretty simple, colored tiles are combined to form secondary colors which can be matched to score points. While the scope of the game is fairly small, this was a complicated game to build and I am very pleased with the results.</p><p>I worked on Swatch as part of a team of four and, having worked with the same team on the previous two casual games, our roles were well established. I was the gameplay programmer and implemented basically everything involving the player's interactions with the game board. The most important feature I worked on was the system for dragging a color and the resulting blending and color matching. After that was set up, my work was mostly (a whole lot of) bug crushing.</p><p>One interesting note about this project is that despite the five week deadline, we took some extra steps in the design work that we hadn't with our previous two projects. For instance, we took a day to paper prototype our ideas and try them out. Our group looked pretty silly huddled together on the floor of the classroom that day, but it’s hard to argue with the results. After the paper prototype, we also went on to try out a handful of iterations on the digital build, which helped as we refined the visual style. All in all, while the prototyping took a bit of extra time and effort, it ultimately led to a much more polished game.</p><p>Not only was Swatch the final game I worked on for a course, it was also the last game I worked on during my time at RIT. Along with other semester long projects, working on Swatch carried me all the way to finals week, with graduation following shortly after. It was certainly a sprint to get it finish in time, but I’m very pleased that I was able to end my academic career with a complete and polished game.</p>"
+        type: "Mobile Game",
+        tech: "Unity 5, C#",
+        date: "May, 2016",
+        duration: "3 weeks",
+        team: "2 Programmers, 1 Artist, 1 Sound Guy",
+        role: "Gameplay Programmer",
+        contrib: "Color Blending, Matching System",
+        desc: "Swatch is a match-3 mobile game based on color blending. Players drag colors around the board, combining primary colors into secondary colors, and matching secondary colors to score points.",
+        funfacts: [
+            "Swatch was one of the last games I worked on during my time at RIT.",
+            "As a team, we spent a lot of time ironing out the design of the game. We even spent a day in class paper prototyping and playtesting the game. We looked pretty silly doing it, but it payed off."
+        ]
+    },
+    
+    ifa: {
+        isProject: true,
+        img: "img/projects/ifa2.png",
     }
 };

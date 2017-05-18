@@ -3,16 +3,38 @@ var site = site || {};
 site.portfolioModal = {
     modalTitle: undefined,
     modalImg: undefined,
+    modalTbl: undefined,
     modalGithub: undefined,
     modalDemo: undefined,
-    modalDesc: undefined,
+    
+    modalProjTitle: undefined,
+    modalProjType: undefined,
+    modalProjTech: undefined,
+    modalProjDate: undefined,
+    modalProjDuration: undefined,
+    modalProjTeam: undefined,
+    modalProjRole: undefined,
+    modalProjContrib: undefined,
+    modalProjDesc: undefined,
+    modalProjFunFacts: undefined,
     
     init: function() {
         this.modalTitle = $( "#modalTitle" );
         this.modalImg = $( "#modalImg" );
+        this.modalTbl = $( "#portfolioItemInfo" );
         this.modalGithub = $( "#modalGithub" );
         this.modalDemo = $( "#modalDemo" );
-        this.modalDesc = $( "#modalDesc" );
+        
+        this.modalProjTitle = $( "#modalProjTitle" );
+        this.modalProjType = $( "#modalProjType" );
+        this.modalProjTech = $( "#modalProjTech" );
+        this.modalProjDate = $( "#modalProjDate" );
+        this.modalProjDuration = $( "#modalProjDuration" );
+        this.modalProjTeam = $( "#modalProjTeam" );
+        this.modalProjRole = $( "#modalProjRole" );
+        this.modalProjContrib = $( "#modalProjContrib" );
+        this.modalProjDesc = $( "#modalProjDesc" );
+        this.modalProjFunFacts = $( "#modalProjFunFacts" );
     },
     
     setModalContent: function( projectName ) {
@@ -23,8 +45,26 @@ site.portfolioModal = {
         this.modalImg.attr( "alt", content.title );
         this.modalGithub.attr( "href", content.git );
         this.modalDemo.attr( "href", content.demo );
-        this.modalDesc.html( content.desc );
-    }
+        
+        if( content.isProject )
+        {
+            this.modalTbl.addClass( "hidden" );
+        }
+        else
+        {
+            this.modalTbl.removeClass( "hidden" );
+            
+            this.modalProjTitle.html( content.title );
+            this.modalProjType.html( content.type );
+            this.modalProjTech.html( content.tech );
+            this.modalProjDate.html( content.date );
+            this.modalProjDuration.html( content.duration );
+            this.modalProjTeam.html( content.team );
+            this.modalProjRole.html( content.role );
+            this.modalProjContrib.html( content.contrib );
+            this.modalProjDesc.html( "<b>Summary:</b><br>" + content.desc );
+        }
+    },
 };
 
 $( document ).ready( function() {
@@ -33,6 +73,7 @@ $( document ).ready( function() {
     $( ".portfolio-item" ).each( function() {
         $( this ).on( "click", function( e ) {
             site.portfolioModal.setModalContent( $( this ).attr( "id" ) );
+            //this.blur();
         });
     } );
 } );
