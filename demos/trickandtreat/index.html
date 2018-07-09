@@ -1,27 +1,34 @@
 <!doctype html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Trick and Treat</title>
-    <style>
-    /* a style sheet needs to be present for cursor hiding and custom cursors to work. */
-    </style>
-    <link href="../../css/demo.css" rel="stylesheet">
-  </head>
-  <body>
-    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
-    <script type='text/javascript'>
-  var Module = {
-    TOTAL_MEMORY: 536870912,
-    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
-    compatibilitycheck: null,
-    dataUrl: "Release/Trick and Treat.data",
-    codeUrl: "Release/Trick and Treat.js",
-    memUrl: "Release/Trick and Treat.mem",
-  };
-</script>
-<script src="Release/UnityLoader.js"></script>
 
-  </body>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122031314-1"></script>
+	<script src="js/analytics.js"></script>
+
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Unity WebGL Player | Trick and Treat</title>
+	<style>
+		/* a style sheet needs to be present for cursor hiding and custom cursors to work. */
+	</style>
+	<link href="../../css/demo.css" rel="stylesheet">
+</head>
+
+<body>
+	<canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
+	<script type='text/javascript'>
+		var Module = {
+			TOTAL_MEMORY: 536870912,
+			errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+			compatibilitycheck: null,
+			dataUrl: "Release/Trick and Treat.data",
+			codeUrl: "Release/Trick and Treat.js",
+			memUrl: "Release/Trick and Treat.mem",
+		};
+	</script>
+	<script src="Release/UnityLoader.js"></script>
+
+</body>
+
 </html>
