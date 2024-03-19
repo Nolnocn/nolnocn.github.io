@@ -5,7 +5,7 @@ site.portfolioContent = {
         title: "Trick and Treat",
         img: "img/projects/tat.png",
         git: "https://github.com/Nolnocn/Trick-and-Treat",
-        demo: "demos/trickandtreat",
+        demo: "demos/trickandtreat/",
         type: "Desktop Game",
         tech: "Unity 4, C#",
         date: "September, 2014",
@@ -13,11 +13,7 @@ site.portfolioContent = {
         team: "4 Programmers, 3 Artists, 1 Composer",
         role: "Gameplay Programmer",
         contrib: "Player Controls, Level Scrolling",
-        desc: "Trick and Treat is a 2D beat 'em up style game about Tom, a delusional \"ghostbuster\" who takes to the streets on the spookiest night of the year to combat the ghostly menace.",
-        funfacts: [
-            "Trick and Treat was a game idea I pitched in a game design course. The class voted on ideas and the highest voted were made.",
-            "The idea for Trick and Treat stemmed from the professor's restriction that all the games pitched must include a vaccuum."
-        ]
+        desc: "<i>Trick and Treat</i> is a 2D beat 'em up style game about Tom, a delusional \"ghostbuster\" who takes to the streets on the spookiest night of the year to combat the ghostly menace.<br><br>This project has a special place in my heart because it is a game idea that I pitched as part of a game design course. Everyone in the class had to pitch a game and then the class voted for which games they wanted to actually make. For the first project, we were given the restriction that the game had to involve a vacuum cleaner. From that simple premise, the idea for <i>Trick and Treat</i> was born. And apparently my idea of a deranged man terrorizing children on Halloween struck a chord with my classmates. Not only was it one of the games that was voted to be made, when we divided up into groups, over a third of the class chose to join the team to work on it. Throwing an idea out into the world and having a bunch of people sign on to help make it a reality was a unique experience and, more than anything, this project gave me a much better appreciation for the talents and insights that each member of a team brings to the table.",
     },
     
     /*sbl: {
@@ -32,7 +28,7 @@ site.portfolioContent = {
         title: "The Patrol",
         img: "img/projects/thepatrol.png",
         git: "https://github.com/Nolnocn/The-Patrol",
-        demo: "demos/thepatrol",
+        demo: "demos/thepatrol/",
         type: "3D Autonomous Agent Simulation",
         tech: "Unity 3, C#",
         date: "December, 2013",
@@ -50,7 +46,7 @@ site.portfolioContent = {
         title: "Don't Get Shot",
         img: "img/projects/dgs.png",
         git: "https://github.com/Nolnocn/Dont-Get-Shot",
-        demo: "demos/dontgetshot",
+        demo: "demos/dontgetshot/",
         type: "Desktop Game (C++) | Web Game (HTM5)",
         tech: "OpenGL, C++ | HTML5, JavaScript",
         date: "May, 2014 (C++)",
@@ -68,7 +64,7 @@ site.portfolioContent = {
         title: "Eden",
         img: "img/projects/eden.png",
         git: "https://github.com/Nolnocn/Eden",
-        demo: "demos/eden",
+        demo: "demos/eden/",
         type: "Multiplayer Web Game",
         tech: "HTML5, JavaScript, Phaser, Node.js",
         date: "October, 2015",
@@ -86,7 +82,7 @@ site.portfolioContent = {
         title: "The Animaker",
         img: "img/projects/animaker.png",
         git: "https://github.com/Nolnocn/Animaker",
-        demo: "demos/animaker",
+        demo: "demos/animaker/",
         type: "Web-based Animation Tool",
         tech: "HTML5, JavaScript",
         date: "October, 2014",
@@ -94,14 +90,14 @@ site.portfolioContent = {
         team: "2 Programmers",
         role: "Programmer",
         contrib: "Animation Playback, Frame Thumbnail System",
-        desc: "The Animaker is a basic animation tool that allows the user to create frame-based animations by adding, arranging, and moving images around in a canvas."
+        desc: "<i>The Animaker</i> is a simple animation tool that allows the user to create frame-based animations by adding, arranging, and moving images around in a canvas."
     },
     
     swatch: {
         title: "Swatch",
         img: "img/projects/swatch.png",
         git: "https://github.com/JosephCoppola/IGM450-Project3",
-        demo: "demos/swatch",
+        demo: "demos/swatch/",
         type: "Mobile Game",
         tech: "Unity 5, C#",
         date: "May, 2016",
@@ -109,15 +105,47 @@ site.portfolioContent = {
         team: "2 Programmers, 1 Artist, 1 Sound Guy",
         role: "Gameplay Programmer",
         contrib: "Color Blending, Matching System",
-        desc: "Swatch is a match-3 mobile game based on color blending. Players drag colors around the board, combining primary colors into secondary colors, and matching secondary colors to score points.",
-        funfacts: [
-            "Swatch was one of the last games I worked on during my time at RIT.",
-            "As a team, we spent a lot of time ironing out the design of the game. We even spent a day in class paper prototyping and playtesting the game. We looked pretty silly doing it, but it payed off."
-        ]
+        desc: "<i>Swatch</i> is a match-3 mobile game based on color blending. Players drag colors around the board, combining primary colors into secondary colors, and matching secondary colors to score points.<br><br>This was one of the last projects I worked on during my college career. As a team, we spent a lot of time solidifying the design of the game, including an extensive paper prototyping session. While it seemed silly at the time, as we sat in the classroom with colored pieces of paper strewn about the floor, it really paid off. <i>Swatch</i> is easily one of the most complete gaming experiences I worked on and I always end up playing it for a bit every time I revisit the project.",
     },
     
     ifa: {
-        isProject: true,
-        img: "img/projects/ifa2.png",
-    }
+        title: "if(adventure)",
+        img: "img/projects/ifa.png",
+        //git: "https://github.com/JosephCoppola/Nolnocn/if-adventure",
+        demo: "demos/ifa/",
+        type: "Web Game",
+        tech: "Haxe 3, HTML5, CSS",
+        date: "May 2017",
+        duration: "2 Days",
+        team: "Just me!",
+        role: "Programmer",
+        contrib: "Design & Development",
+        desc: "<i>if(adventure)</i> is a proof of concept for a \"code-based\" adventure game. The idea was to create a game that is played by setting values for variables in the code to cause it to follow the desired path. Gameplay would involve logic puzzles and a sort of troubleshooting to avoid 'bugs' in the code.<br><br>There isn’t much in the way of gameplay in its current state, but it was a cool project to undertake. It was built in Haxe and exported to JavaScript, which gave me a chance to refine my workflow for Haxe projects. The code manipulates the content of the DOM while the formatting, animations, and visual flares are all driven by CSS. I don't always dig too deep into all the bells and whistles of CSS, so this was a fun opportuniaty to see what modern web development has to offer.",
+    },
+
+    doodle: {
+        title: "Doodle Defender",
+        img: "img/projects/doodledefender.png",
+        type: "Flash Animation",
+        tech: "Flash",
+        date: "October 2013",
+        duration: "3 weeks",
+        team: "Just me!",
+        role: "Animator",
+        contrib: "2D Animation & Asset Production",
+        desc: "As part of the first animation course I took in college, we designed a 'game' and created assets for said game. We did not actually develop the games, but rather focused on asset production intended for use in a game. Projects included the creation of typical game animations such as an idle animation, walk cycle, jump, and some sort of action. The final project tasked us with storyboarding and creating an intro cinematic for our game idea.<br><br>My game was <i>Doodle Defender</i>, a side-scrolling platformer staring the eponymous Doodle Defender as he tries to wrangle rogue doodles terrorizing the notebook. Check out some of the animations I created and more about the project <a href=\"https://blargh.nconlon.com/2024/03/doodle-defender.html\" target=\"_blank\">over on the blog</a>.",
+    },
+
+    ddic: {
+        title: "Public Speaking Contest Poster",
+        img: "img/projects/poster.png",
+        type: "Graphic Design",
+        tech: "Adobe Illustrator",
+        date: "May 2014",
+        duration: "1 Week",
+        team: "Just me!",
+        role: "Designer",
+        contrib: "Design & Asset Production",
+        desc: "As part of a Digital Design course I took, we were tasked with creating a poster for an upcoming public speaking contest on campus. In a bit of a twist, one design from the class would be chosen to actually be printed and used to advertise the contest.<br><br>We used Adobe Illustrator to create the posters. My design focused on a dark/light contrast, featuring a silhouetted cartoony character in a spotlight as an attention-grabbing centerpiece. I used the tagline \“Speak Your Mind\” to reinforce the 'center of attention' theme I was attempting to establish.<br><br>All in all, I was very happy with how it turned out. Someone must have agreed because my poster was the design that was selected to be hung up all over campus. I even received a print to keep for myself. The cherry on top was that I was coincidentally taking Public Speaking that same semester and my professor was the one hosting the public speaking contest. It was kind of funny having my design held up in front of my design class, and then subsequently held up in front of my public speaking class.<br><br><a href=\"demos/ddic/poster.pdf\" target=\"_blank\">Check out my poster here.</a>",
+    },
 };

@@ -43,8 +43,35 @@ site.portfolioModal = {
         this.modalTitle.html( content.title );
         this.modalImg.attr( "src", content.img );
         this.modalImg.attr( "alt", content.title );
-        this.modalGithub.attr( "href", content.git );
-        this.modalDemo.attr( "href", content.demo );
+
+        if( content.git )
+        {
+            this.modalGithub.attr( "href", content.git );
+            this.modalGithub.removeClass( "hidden" );
+        }
+        else
+        {
+            this.modalGithub.addClass( "hidden" );
+        }
+
+        if( content.demo )
+        {
+            this.modalDemo.attr( "href", content.demo );
+            this.modalDemo.removeClass( "hidden" );
+        }
+        else
+        {
+            this.modalDemo.addClass( "hidden" );
+        }
+
+        if( !content.demo || !content.git )
+        {
+            $( "#modalLinkDivider" ).addClass( "hidden" );
+        }
+        else
+        {
+            $( "#modalLinkDivider" ).removeClass( "hidden" );
+        }
         
         if( content.isProject )
         {

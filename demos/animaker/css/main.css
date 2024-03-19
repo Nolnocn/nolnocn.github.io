@@ -54,3 +54,8 @@ a:link, a:visited {
 a:hover {
     color: #888;
 }
+
+#framerate {
+    height: 21px;
+    width: 42px;
+}

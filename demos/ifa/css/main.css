@@ -1,0 +1,411 @@
+html
+{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    min-height: 100vh;
+}
+
+body
+{
+    font-family: /*"Consolas",*/ "Courier", monospace;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    position: relative;
+}
+
+body.light
+{
+    color: #657b83;
+    background-color: #eee8d5;
+}
+
+body.dark
+{
+    color: #839496;
+    background-color: #073642;
+}
+
+.colorPick
+{
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.4s;
+    font-size: 2em;
+    border-style: solid;
+    border-width: 2px;
+    z-index: 9999;
+}
+
+.colorPick.light
+{
+    background-color: #fdf6e3;
+    color: #657b83;
+    border-color: #657b83;
+}
+
+.colorPick.dark
+{
+    background-color: #002b36;
+    color: #839496;
+    border-color: #839496;
+}
+
+.colorPick.light:hover
+{
+    background-color: #002b36;
+    color: #839496;
+    border-color: #839496;
+}
+
+.colorPick.dark:hover
+{
+    background-color: #fdf6e3;
+    color: #657b83;
+    border-color: #657b83;
+}
+
+.colorPick:active
+{
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+div
+{
+    padding: 0 0 0 0.5em;
+}
+
+div div
+{
+    margin-left: 2em;
+}
+
+div .active
+{
+    border-style: solid;
+    border-width: 1px 0 1px 1px;
+}
+
+div .active.light
+{
+    background-color: #eee8d5;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+div .active.dark
+{
+    background-color: #073642;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+div .conditionTrue
+{
+    outline-style: solid;
+    outline-color: rgba(133, 153, 0, 0);
+    outline-width: 1px;
+    
+    -webkit-animation: conditionTrueFade 0.5s; /* Safari 4.0 - 8.0 */
+    animation: conditionTrueFade 0.5s;
+}
+
+/*div.ifElBlock div
+{
+    margin-left: 0;
+}
+
+div.ifElBlock div div
+{
+    margin-left: 2em;
+}*/
+
+@-webkit-keyframes conditionTrueFade
+{
+    0% { outline-color: #859900; }
+    100% { outline-color: rgba(133, 153, 0, 0); }
+    animation-timing-function: ease-in;
+}
+
+@keyframes conditionTrueFade
+{
+    0% { outline-color: #859900; }
+    100% { outline-color: rgba(133, 153, 0, 0); }
+    animation-timing-function: ease-in;
+}
+
+div .funcInvoke
+{
+    outline-style: solid;
+    outline-color: rgba(38, 139, 210, 0);
+    outline-width: 1px;
+    
+    -webkit-animation: funcInvokeFade 0.5s; /* Safari 4.0 - 8.0 */
+    animation: funcInvokeFade 0.5s;
+}
+
+@-webkit-keyframes funcInvokeFade
+{
+    0% { outline-color: rgba(38, 139, 210, 1); }
+    100% { outline-color: rgba(38, 139, 210, 0); }
+    animation-timing-function: ease-in;
+}
+
+@keyframes funcInvokeFade
+{
+    0% { outline-color: rgba(38, 139, 210, 1); }
+    100% { outline-color: rgba(38, 139, 210, 0); }
+    animation-timing-function: ease-in;
+}
+
+div .conditionFalse
+{
+    outline-style: solid;
+    outline-color: rgba(220, 50, 47, 0);
+    outline-width: 1px;
+
+    -webkit-animation: conditionFalseFade 0.5s; /* Safari 4.0 - 8.0 */
+    animation: conditionFalseFade 0.5s;
+}
+
+@-webkit-keyframes conditionFalseFade
+{
+    0% { outline-color: #dc322f; }
+    100% { outline-color: rgba(220, 50, 47, 0); }
+    animation-timing-function: ease-in;
+}
+
+@keyframes conditionFalseFade
+{
+    0% { outline-color: #dc322f; }
+    100% { outline-color: rgba(220, 50, 47, 0); }
+    animation-timing-function: ease-in;
+}
+
+.codeContainer
+{
+    margin: auto;
+    bottom: 0;
+    min-height: 100vh;
+    width: 60em;
+    padding: 0;
+    
+    border-style: solid;
+    border-width: 0 0 0 1px;
+}
+
+.codeContainer.light
+{
+    background-color: #fdf6e3;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.codeContainer.dark
+{
+    background-color: #002b36;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+#transitionOverlay
+{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    width: 60em;
+    z-index: 9998;
+}
+
+#transitionOverlay.light
+{
+    background-color: #fdf6e3;
+}
+
+#transitionOverlay.dark
+{
+    background-color: #002b36;
+}
+
+.overlayFadeIn
+{
+    -webkit-animation: overlayFadeIn 2s; /* Safari 4.0 - 8.0 */
+    animation: overlayFadeIn 2s;
+}
+
+@-webkit-keyframes overlayFadeIn
+{
+    0% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+    animation-timing-function: linear;
+}
+
+@keyframes overlayFadeIn
+{
+    0% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+    animation-timing-function: linear;
+}
+
+.overlayFadeOut
+{
+    -webkit-animation: overlayFadeOut 2s; /* Safari 4.0 - 8.0 */
+    animation: overlayFadeOut 2s;
+}
+
+@-webkit-keyframes overlayFadeOut
+{
+    0% { opacity: 1.0; }
+    100% { opacity: 0.0; }
+    animation-timing-function: linear;
+}
+
+@keyframes overlayFadeOut
+{
+    0% { opacity: 1.0; }
+    100% { opacity: 0.0; }
+    animation-timing-function: linear;
+}
+
+::selection
+{
+    background: #cb4b16;
+}
+
+::-moz-selection
+{
+    background: #cb4b16;
+}
+
+::selection.light
+{
+    color: #eee8d5;
+}
+
+::-moz-selection.light
+{
+    color: #eee8d5;
+}
+
+::selection.dark
+{
+    color: #073642;
+}
+
+::-moz-selection.dark
+{
+    color: #073642;
+}
+
+.comment
+{
+    font-style: italic;
+    white-space: pre;
+}
+
+.comment.light
+{
+    color: #93a1a1;
+}
+
+.comment.dark
+{
+    color: #586e75;
+}
+
+.typeName
+{
+    color: #b58900;
+}
+
+.keyword
+{
+    color: #859900;
+}
+
+.rawValue
+{
+    color: #2aa198;
+}
+
+select
+{
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-align-last:center;
+    width: 8em;
+    border: 0;
+    font: 1em "Courier";
+    background-color: rgba( 255, 255, 255, 0.0 );
+}
+
+select::-ms-expand {
+    /* for IE 11 */
+    display: none;
+}
+
+.interactPrompt.light
+{
+    font-weight: bolder;
+    -webkit-animation: flash 1s infinite; /* Safari 4.0 - 8.0 */
+    animation: flash 1s infinite;
+}
+
+.interactPrompt.dark
+{
+    font-weight: bolder;
+    -webkit-animation: darkFlash 1s infinite; /* Safari 4.0 - 8.0 */
+    animation: darkFlash 1s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes flash
+{
+    0% { color: rgba(101, 123, 131, 0.4); }
+    50% { color: rgba(101, 123, 131, 0.8); }
+    100% { color: rgba(101, 123, 131, 0.4); }
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes flash
+{
+    0% { color: rgba(101, 123, 131, 0.4); }
+    50% { color: rgba(101, 123, 131, 0.8); }
+    100% { color: rgba(101, 123, 131, 0.4); }
+    animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes darkFlash
+{
+    0% { color: rgba(131, 148, 150, 0.4); }
+    50% { color: rgba(131, 148, 150, 0.8); }
+    100% { color: rgba(131, 148, 150, 0.4); }
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes darkFlash
+{
+    0% { color: rgba(131, 148, 150, 0.4); }
+    50% { color: rgba(131, 148, 150, 0.8); }
+    100% { color: rgba(131, 148, 150, 0.4); }
+    animation-timing-function: ease-in-out;
+}
+
+#splashComment
+{
+    font-style: normal;
+    font-weight: bold;
+}
